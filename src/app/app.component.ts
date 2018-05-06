@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
   constructor(private _walmart: WalmartApiService  ) { }
 
   ngOnInit() {
-    this._walmart.findList()
+    this._walmart.listItems()
     .subscribe(res => {
     console.log(res);
     });
