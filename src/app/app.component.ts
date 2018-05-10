@@ -1,21 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { WalmartApiService  } from './services/walmart-api.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
-
-  constructor(private _walmart: WalmartApiService  ) { }
-
-  ngOnInit() {
-    this._walmart.listItems()
-    .subscribe(res => {
-    console.log(res);
-    });
-  }
-
-
+export class AppComponent {
+  title = 'app works!';
 }
