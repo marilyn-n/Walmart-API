@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { WalmartApiService } from './services/walmart-api.service';
-import { HttpClientModule } from '@angular/common/http';
+import { WalmartApiService} from './services/walmart.api.service';
+import { HttpModule } from '@angular/http';
 import { Routes, RouterModule} from '@angular/router';
 
 // import { InterceptorModule } from './interceptor.module';
@@ -13,7 +13,7 @@ import { SingleProductComponent } from './single-product/single-product.componen
 
 // routes
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: '', pathMatch: 'full' },
   {path: 'show-products', component : ProductsComponent },
   {path: ':id', component: SingleProductComponent},
 ];
@@ -27,7 +27,7 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
+    HttpModule,
     RouterModule.forRoot(routes),
    // InterceptorModule,
   ],
