@@ -9,7 +9,7 @@ export class WalmartApiService {
   constructor(private _http: Http) { }
 
  getItem() {
-    return this._http.get(`${this.base_URL}/v1/items?&upc=035000521019&apiKey=8kyu45v4g2d6cykr92ckmjj5`)
+    return this._http.get(`${this.base_URL}/v1/paginated/items?brand=bimbo&apiKey=8kyu45v4g2d6cykr92ckmjj5`)
     .map((res: Response) => res.json());
   }
 
@@ -22,3 +22,4 @@ export class WalmartApiService {
 // by upc
 // http://api.walmartlabs.com/v1/items?&upc=035000521019&apiKey=8kyu45v4g2d6cykr92ckmjj5
 
+// http://api.walmartlabs.com/v1/paginated/items?brand=bimbo&apiKey=8kyu45v4g2d6cykr92ckmjj5

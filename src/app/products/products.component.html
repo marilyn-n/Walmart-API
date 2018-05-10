@@ -2,7 +2,14 @@
 
 <button (click)="getAnItem()">Get Item</button>
 
-<li>{{items[0].name}}</li>
-<li>{{items[0].salePrice}}</li>
-<li><img src="{{items[0].thumbnailImage}}" alt=""> </li>
+<div *ngFor="let items of items">
+    <li>{{items.categoryPath}}</li>
+    <li>{{items.name}}</li>
+    <li>{{items.salePrice}}</li>
+    <li><img src="{{items.thumbnailImage}}" alt=""> </li>
+
+</div>
+
+
+
 
