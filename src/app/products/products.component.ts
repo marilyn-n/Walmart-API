@@ -16,8 +16,10 @@ export class ProductsComponent implements OnInit {
   ngOnInit() {}
 
   getAnItem() {
-    this._walmartS.getItem()
-   .subscribe((items) => this.items = items);
+   this._walmartS.getItem()
+   .subscribe((data) => {
+    this.items = data.items;
+   });
   }
 
 }

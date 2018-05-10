@@ -1,9 +1,8 @@
 <h3>Products should be here</h3>
 
 <button (click)="getAnItem()">Get Item</button>
-<p>{{ items | json }} </p>
 
-<!-- <pre>{{items.name}}</pre>
-<pre>{{items.upc}}</pre>
-<pre>{{items.categoryPath}}</pre> -->
+<li>{{items[0].name}}</li>
+<li>{{items[0].salePrice}}</li>
+<li><img src="{{items[0].thumbnailImage}}" alt=""> </li>
 

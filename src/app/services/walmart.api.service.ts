@@ -10,7 +10,7 @@ export class WalmartApiService {
 
  getItem() {
     return this._http.get(`${this.base_URL}/v1/items?&upc=035000521019&apiKey=8kyu45v4g2d6cykr92ckmjj5`)
-    .map((res) => res.json());
+    .map((res: Response) => res.json());
   }
 
 }
