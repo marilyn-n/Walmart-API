@@ -1,0 +1,18 @@
+li > img {
+  position: relative;
+  left:130px;
+  top:40px;
+}
+
+li{
+  list-style: none;
+}
+
+div{
+  width: 400px;
+  height: 250px;
+  float: left;
+  text-align: left;
+  border: 1px solid gray;
+  padding: 5px;
+}

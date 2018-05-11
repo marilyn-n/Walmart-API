@@ -16,7 +16,7 @@ import { CategoriesComponent } from './categories/categories.component';
 const routes: Routes = [
   { path: '', redirectTo: '', pathMatch: 'full' },
   { path: 'show-products', component : ProductsComponent },
-  { path: 'categories', component: CategoriesComponent },
+  { path: 'categories', component: CategoriesComponent }, // here its the problem
   { path: 'skin-care', component: CategoriesComponent },
   { path: ':id', component: SingleProductComponent},
 ];
