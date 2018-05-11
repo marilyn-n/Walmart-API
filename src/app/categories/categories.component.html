@@ -1,0 +1,14 @@
+<h1>Categories</h1>
+<li> <a [routerLink]="['../show-products']"> Bakery </a> </li>
+<li> <a [routerLink]="['../skin-care']"> Skin Care</a></li>
+
+<h1>html should be here</h1>
+
+<!-- <button (click)="showCategories()">show categories</button> -->
+<div *ngFor="let items of items">
+  <li>Categoria: {{items.categoryPath}}</li>
+  <li>Producto: {{items.name}}</li>
+  <li>Precio: {{items.salePrice}}</li>
+  <li><img src="{{items.thumbnailImage}}" alt=""> </li>
+
+</div>

@@ -1,15 +1,12 @@
 <h3>Products should be here</h3>
 
-<button (click)="getAnItem()">Get Item</button>
-
 <div *ngFor="let items of items">
-    <li>{{items.categoryPath}}</li>
-    <li>{{items.name}}</li>
-    <li>{{items.salePrice}}</li>
+    <li>Categoria: {{items.categoryPath}}</li>
+    <li>Producto: {{items.name}}</li>
+    <li>Precio: {{items.salePrice}}</li>
     <li><img src="{{items.thumbnailImage}}" alt=""> </li>
 
 </div>
-
 
 
 

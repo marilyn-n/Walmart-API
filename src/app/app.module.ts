@@ -10,12 +10,15 @@ import { Routes, RouterModule} from '@angular/router';
 import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
 import { SingleProductComponent } from './single-product/single-product.component';
+import { CategoriesComponent } from './categories/categories.component';
 
 // routes
 const routes: Routes = [
   { path: '', redirectTo: '', pathMatch: 'full' },
-  {path: 'show-products', component : ProductsComponent },
-  {path: ':id', component: SingleProductComponent},
+  { path: 'show-products', component : ProductsComponent },
+  { path: 'categories', component: CategoriesComponent },
+  { path: 'skin-care', component: CategoriesComponent },
+  { path: ':id', component: SingleProductComponent},
 ];
 
 
@@ -24,6 +27,7 @@ const routes: Routes = [
     AppComponent,
     ProductsComponent,
     SingleProductComponent,
+    CategoriesComponent,
   ],
   imports: [
     BrowserModule,

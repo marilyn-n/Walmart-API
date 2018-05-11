@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { WalmartApiService} from '../services/walmart.api.service';
+import { WalmartApiService } from '../services/walmart.api.service';
 import { Observable } from 'rxjs/Observable';
 
 
@@ -11,15 +11,14 @@ import { Observable } from 'rxjs/Observable';
 
 export class ProductsComponent implements OnInit {
   items: any;
-  constructor(private _walmartS: WalmartApiService ) { }
+  constructor(private _walmartS: WalmartApiService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this._walmartS.getItems()
+      .subscribe((data) => {
+        this.items = data.items;
+      });
 
-  getAnItem() {
-   this._walmartS.getItem()
-   .subscribe((data) => {
-    this.items = data.items;
-   });
   }
 
 }
