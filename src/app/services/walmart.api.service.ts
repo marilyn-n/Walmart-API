@@ -13,7 +13,7 @@ export class WalmartApiService {
     .map((res: Response) => res.json());
   }
 
-  getCategories() {
+  getSkinProducts() {
     return this._http.get(`${this.base_URL}/v1/paginated/items?brand=nivea&apiKey=8kyu45v4g2d6cykr92ckmjj5`)
     .map((res: Response) => res.json());
   }
@@ -28,5 +28,3 @@ export class WalmartApiService {
 // http://api.walmartlabs.com/v1/items?&upc=035000521019&apiKey=8kyu45v4g2d6cykr92ckmjj5
 
 // http://api.walmartlabs.com/v1/paginated/items?brand=bimbo&apiKey=8kyu45v4g2d6cykr92ckmjj5
-
-// http://api.walmartlabs.com/v1/paginated/items?brand=nivea&apiKey=8kyu45v4g2d6cykr92ckmjj5

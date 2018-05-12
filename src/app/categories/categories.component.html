@@ -1,17 +1,8 @@
-<body>
-  
-
-<h1>Categories</h1>
 <li> <a [routerLink]="['../show-products']"> Bakery </a> </li>
-<li> <a [routerLink]="['../skin-care']"> Skin Care</a></li>
+<li> <a [routerLink]="['../skin-care']"> Skin Care </a></li>
+<li> <a [routerLink]="['../skin-care']"> Electronics </a></li>
+<li> <a [routerLink]="['../skin-care']"> Babies </a></li>
+<li> <a [routerLink]="['../skin-care']"> Clothes </a></li>
+<li> <a [routerLink]="['../skin-care']"> Make up </a></li>
 
-<!-- <button (click)="showCategories()">show categories</button> -->
-<div *ngFor="let items of items">
-  <li><b>Categoria:</b> {{items.categoryPath}}</li>
-  <li><b>Producto:</b> {{items.name}}</li>
-  <li><b>Precio: </b>{{items.salePrice}}</li>
-  <li><img src="{{items.thumbnailImage}}" alt=""> </li>
 
-</div>
-
-</body>

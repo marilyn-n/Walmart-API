@@ -9,16 +9,15 @@ import { Routes, RouterModule} from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
-import { SingleProductComponent } from './single-product/single-product.component';
 import { CategoriesComponent } from './categories/categories.component';
+import { SkinCareComponent } from './skin-care/skin-care.component';
 
 // routes
 const routes: Routes = [
   { path: '', redirectTo: '', pathMatch: 'full' },
   { path: 'show-products', component : ProductsComponent },
   { path: 'categories', component: CategoriesComponent }, // here its the problem
-  { path: 'skin-care', component: CategoriesComponent },
-  { path: ':id', component: SingleProductComponent},
+  { path: 'skin-care', component: SkinCareComponent },
 ];
 
 
@@ -26,8 +25,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     ProductsComponent,
-    SingleProductComponent,
     CategoriesComponent,
+    SkinCareComponent,
   ],
   imports: [
     BrowserModule,
