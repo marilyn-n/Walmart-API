@@ -6,17 +6,39 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class WalmartApiService {
   base_URL = 'http://api.walmartlabs.com';
+  api_key = 'apiKey=8kyu45v4g2d6cykr92ckmjj5';
   constructor(private _http: Http) { }
 
  getItems() {
-    return this._http.get(`${this.base_URL}/v1/paginated/items?brand=bimbo&apiKey=8kyu45v4g2d6cykr92ckmjj5`)
+    return this._http.get(`${this.base_URL}/v1/paginated/items?brand=bimbo&${this.api_key}`)
     .map((res: Response) => res.json());
   }
 
   getSkinProducts() {
-    return this._http.get(`${this.base_URL}/v1/paginated/items?brand=nivea&apiKey=8kyu45v4g2d6cykr92ckmjj5`)
+    return this._http.get(`${this.base_URL}/v1/paginated/items?brand=nivea&${this.api_key}`)
     .map((res: Response) => res.json());
   }
+
+  getElectronics() {
+   return this._http.get(`${this.base_URL}/v1/paginated/items?brand=samsung&${this.api_key}`)
+   .map((res: Response) => res.json());
+  }
+
+  getBabyProducts() {
+    return this._http.get(`${this.base_URL}/v1/paginated/items?brand=gerber&${this.api_key}`)
+    .map((res: Response) => res.json());
+  }
+
+  getClothes() {
+    return this._http.get(`${this.base_URL}/v1/paginated/items?brand=george&${this.api_key}`)
+    .map((res: Response) => res.json());
+  }
+
+  getMakeUpProducts() {
+    return this._http.get(`${this.base_URL}/v1/paginated/items?brand=maybelline&${this.api_key}`)
+    .map((res: Response) => res.json());
+  }
+
 
 }
 

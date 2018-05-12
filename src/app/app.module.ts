@@ -11,6 +11,10 @@ import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { SkinCareComponent } from './skin-care/skin-care.component';
+import { ElectronicsComponent } from './electronics/electronics.component';
+import { BabyComponent } from './baby/baby.component';
+import { ClothesComponent } from './clothes/clothes.component';
+import { MakeUpComponent } from './make-up/make-up.component';
 
 // routes
 const routes: Routes = [
@@ -18,6 +22,11 @@ const routes: Routes = [
   { path: 'show-products', component : ProductsComponent },
   { path: 'categories', component: CategoriesComponent }, // here its the problem
   { path: 'skin-care', component: SkinCareComponent },
+  { path: 'electronics', component: ElectronicsComponent },
+  { path: 'baby', component: BabyComponent },
+  { path: 'clothes', component: ClothesComponent },
+  { path: 'make-up', component: MakeUpComponent }
+
 ];
 
 
@@ -27,6 +36,10 @@ const routes: Routes = [
     ProductsComponent,
     CategoriesComponent,
     SkinCareComponent,
+    ElectronicsComponent,
+    BabyComponent,
+    ClothesComponent,
+    MakeUpComponent,
   ],
   imports: [
     BrowserModule,
