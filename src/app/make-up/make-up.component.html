@@ -5,7 +5,7 @@
 
 <div *ngFor="let items of items">
   <ul>
-    <li>{{items.name}}</li>
+      <a [routerLink]="['../', items.itemId]"> <p>{{items.name}}</p></a>
     <li>{{items.salePrice}}</li>
     <li>{{items.shortDescription}}</li>
     <li><img src="{{items.mediumImage}}" alt=""></li>

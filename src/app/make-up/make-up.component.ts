@@ -8,7 +8,7 @@ import { Observable } from 'rxjs/observable';
   styleUrls: ['./make-up.component.css']
 })
 export class MakeUpComponent implements OnInit {
-items: any;
+  items: any;
   constructor(private makeupS: WalmartApiService) { }
 
   ngOnInit() {

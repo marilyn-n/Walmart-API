@@ -39,13 +39,20 @@ export class WalmartApiService {
     .map((res: Response) => res.json());
   }
 
-  getSpetials() {
-    return this._http.get(`${this.base_URL}/v1/feeds/specialbuy?${this.api_key}&amp;categoryId=3944`)
+  getOneItem(id) {
+    return this._http.get(`${this.base_URL}/v1/paginated/items?&${this.api_key}`)
     .map((res: Response) => res.json());
   }
 
+  // getSpetials() {
+  //   return this._http.get(`${this.base_URL}/v1/feeds/specialbuy?${this.api_key}&amp;categoryId=3944`)
+  //   .map((res: Response) => res.json());
+  // }
+
 
 }
+
+// http://api.walmartlabs.com/v1/feeds/specialbuy?apiKey=8kyu45v4g2d6cykr92ckmjj5
 
 
 // by id

@@ -2,6 +2,7 @@
 <h3>Breads</h3>
 
 <div *ngFor="let items of items">
+        <a [routerLink]="['../', items.itemId]"> <p>{{items.name}}</p></a>
     <li>Categoria: {{items.categoryPath}}</li>
     <li>Producto: {{items.name}}</li>
     <li>Precio: {{items.salePrice}}</li>

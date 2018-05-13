@@ -15,6 +15,7 @@ import { ElectronicsComponent } from './electronics/electronics.component';
 import { BabyComponent } from './baby/baby.component';
 import { ClothesComponent } from './clothes/clothes.component';
 import { MakeUpComponent } from './make-up/make-up.component';
+import { SingleProductComponent } from './single-product/single-product.component';
 
 // routes
 const routes: Routes = [
@@ -25,7 +26,8 @@ const routes: Routes = [
   { path: 'electronics', component: ElectronicsComponent },
   { path: 'baby', component: BabyComponent },
   { path: 'clothes', component: ClothesComponent },
-  { path: 'make-up', component: MakeUpComponent }
+  { path: 'make-up', component: MakeUpComponent },
+  { path: ':id', component: SingleProductComponent }
 
 ];
 
@@ -40,6 +42,7 @@ const routes: Routes = [
     BabyComponent,
     ClothesComponent,
     MakeUpComponent,
+    SingleProductComponent,
   ],
   imports: [
     BrowserModule,
