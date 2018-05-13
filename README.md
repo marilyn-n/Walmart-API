@@ -1,5 +1,6 @@
-# WalmartApiNg
+# Walmart Api - Angular
 
+Walmart is the world's largest retailer, and the Walmart Open API provides access to the extensive product catalog
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.2.
 
 ## Development server
