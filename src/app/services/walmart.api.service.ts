@@ -39,6 +39,11 @@ export class WalmartApiService {
     .map((res: Response) => res.json());
   }
 
+  getSpetials() {
+    return this._http.get(`${this.base_URL}/v1/feeds/specialbuy?${this.api_key}&amp;categoryId=3944`)
+    .map((res: Response) => res.json());
+  }
+
 
 }
 

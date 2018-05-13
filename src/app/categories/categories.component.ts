@@ -11,6 +11,11 @@ export class CategoriesComponent implements OnInit {
 items: any;
   constructor(private catService: WalmartApiService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.catService.getSpetials()
+    .subscribe((data) => {
+      this.items = data.items;
+    });
+  }
 
 }
