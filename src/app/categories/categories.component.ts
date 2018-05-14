@@ -12,11 +12,11 @@ items: any;
   constructor(private catService: WalmartApiService) { }
 
   ngOnInit() {
-  //   this.catService.getSpetials()
-  //   .subscribe((data) => {
-  //     this.items = data.items;
-  //   });
-  // }
+    this.catService.getBestSellers()
+    .subscribe((data) => {
+      this.items = data.items;
+    });
+  }
 
 }
-}
+

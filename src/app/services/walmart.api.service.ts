@@ -50,11 +50,12 @@ export class WalmartApiService {
   }
 
 
-  // getSpetials() {
-  //   return this._http.get(`${this.base_URL}/v1/feeds/specialbuy?${this.api_key}&amp;categoryId=3944`)
-  //   .map((res: Response) => res.json());
-  // }
+  getBestSellers() {
+    return this._http.get(`${this.base_URL}/v1/feeds/bestsellers?${this.api_key}&amp;categoryId=3944`)
+    .map((res: Response) => res.json());
+  }
 }
+
 
 // http://api.walmartlabs.com/v1/feeds/specialbuy?apiKey=8kyu45v4g2d6cykr92ckmjj5
 
