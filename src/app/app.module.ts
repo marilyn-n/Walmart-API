@@ -16,18 +16,20 @@ import { BabyComponent } from './baby/baby.component';
 import { ClothesComponent } from './clothes/clothes.component';
 import { MakeUpComponent } from './make-up/make-up.component';
 import { SingleProductComponent } from './single-product/single-product.component';
+import { DepartmentsComponent } from './departments/departments.component';
 
 // routes
 const routes: Routes = [
   { path: '', redirectTo: '', pathMatch: 'full' },
   { path: 'show-products', component : ProductsComponent },
-  { path: 'categories', component: CategoriesComponent }, // here its the problem
+  { path: 'categories', component: CategoriesComponent },
   { path: 'skin-care', component: SkinCareComponent },
   { path: 'electronics', component: ElectronicsComponent },
   { path: 'baby', component: BabyComponent },
   { path: 'clothes', component: ClothesComponent },
   { path: 'make-up', component: MakeUpComponent },
-  { path: ':id', component: SingleProductComponent }
+  { path: 'departments', component: DepartmentsComponent},
+  { path: ':id', component: SingleProductComponent },
 
 ];
 
@@ -43,6 +45,7 @@ const routes: Routes = [
     ClothesComponent,
     MakeUpComponent,
     SingleProductComponent,
+    DepartmentsComponent,
   ],
   imports: [
     BrowserModule,

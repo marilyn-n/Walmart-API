@@ -8,14 +8,16 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./single-product.component.css']
 })
 export class SingleProductComponent implements OnInit {
-itemId: any;
+items: Object;
   constructor(private single: WalmartApiService, private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.route.params
     .subscribe((params) => {
        this.single.getOneItem(params.id)
-      .subscribe((data) => this.itemId = data.itemId);
+      .subscribe((data) => {
+        this.items = data.items;
+      });
     });
   }
 
