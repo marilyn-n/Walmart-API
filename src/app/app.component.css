@@ -1,4 +1,17 @@
+h1{
+  color: white;
+  font-family: sans-serif;
+}
+
 li{
   list-style: none;
   margin: 10px;
+  float:left;
+  padding: 10px;
+  background-color: gray;
 }
+
+a{
+  color: white;
+}
+
