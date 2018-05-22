@@ -1,0 +1,23 @@
+li{
+  list-style: none ;
+}
+
+button:hover{
+  background-color: #fd6500;
+}
+
+button{
+  transition-duration: 0.4s;
+  padding: 1em;
+  width: 100px;
+  height: 40px;
+  background-color: #1B75CF;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+
+
+
+a{
+  color: white;
+}

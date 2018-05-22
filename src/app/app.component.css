@@ -5,8 +5,12 @@ ul, button{
   padding: 10px;
   background-color: #1B75CF;
   border-color: #1B75CF;
+  transition-duration: 0.4s;
 }
-
+button:hover{
+  background-color: #fd6500;
+  border-radius: 5px;
+}
 ul{
   width: 1210px;
 }
