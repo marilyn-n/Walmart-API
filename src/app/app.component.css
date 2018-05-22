@@ -1,17 +1,18 @@
-h1{
-  color: white;
-  font-family: sans-serif;
-}
-
-li{
+ul, button{
   list-style: none;
   margin: 10px;
   float:left;
   padding: 10px;
-  background-color: gray;
+  background-color: #1B75CF;
+  border-color: #1B75CF;
+}
+
+ul{
+  width: 1210px;
 }
 
 a{
   color: white;
 }
+
 
