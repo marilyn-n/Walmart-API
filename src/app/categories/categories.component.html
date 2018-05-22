@@ -4,12 +4,3 @@
   <li> <button> <a [routerLink]="['../baby']"> Baby </a> </button>    </li> 
   <li> <button> <a [routerLink]="['../clothes']"> Clothes </a> </button>    </li> 
   <li> <button> <a [routerLink]="['../make-up']"> Make up </a> </button>    </li> 
-
-<h2>Best Sellers </h2>
-<div *ngFor="let items of items">
-<ul>
-  <li>{{items.name}}</li>
-  <li>{{items.salePrice}}</li>
-  <li> <img src="{{items.thumbnailImage}}" alt=""></li>
-</ul>
-</div>

@@ -8,15 +8,8 @@ import { Observable } from 'rxjs/Observable';
   styleUrls: ['./categories.component.css']
 })
 export class CategoriesComponent implements OnInit {
-items: any;
-  constructor(private catService: WalmartApiService) { }
 
-  ngOnInit() {
-    this.catService.getBestSellers()
-    .subscribe((data) => {
-      this.items = data.items;
-    });
-  }
+  constructor() { }
 
-}
+  ngOnInit() {}
 

@@ -17,6 +17,7 @@ import { ClothesComponent } from './clothes/clothes.component';
 import { MakeUpComponent } from './make-up/make-up.component';
 import { SingleProductComponent } from './single-product/single-product.component';
 import { DepartmentsComponent } from './departments/departments.component';
+import { BestSellersComponent } from './best-sellers/best-sellers.component';
 
 // routes
 const routes: Routes = [
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'clothes', component: ClothesComponent },
   { path: 'make-up', component: MakeUpComponent },
   { path: 'departments', component: DepartmentsComponent},
+  { path: 'best-sellers', component: BestSellersComponent },
   { path: ':id', component: SingleProductComponent },
 
 ];
@@ -46,6 +48,7 @@ const routes: Routes = [
     MakeUpComponent,
     SingleProductComponent,
     DepartmentsComponent,
+    BestSellersComponent,
   ],
   imports: [
     BrowserModule,

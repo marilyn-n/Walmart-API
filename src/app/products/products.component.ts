@@ -11,6 +11,7 @@ import { Observable } from 'rxjs/Observable';
 
 export class ProductsComponent implements OnInit {
   items: any;
+  categoryPath = 'Bakery';
   constructor(private _walmartS: WalmartApiService) { }
 
   ngOnInit() {

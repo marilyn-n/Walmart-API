@@ -1,0 +1,13 @@
+<p>
+  best-sellers works!
+</p>
+
+<h2>Best Sellers </h2>
+
+<div *ngFor="let items of items">
+<ul>
+  <li>{{items.name}}</li>
+  <li>{{items.salePrice}}</li>
+  <li> <img src="{{items.thumbnailImage}}" alt=""></li>
+</ul>
+</div>

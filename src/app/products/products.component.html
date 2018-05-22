@@ -1,11 +1,9 @@
 <body>
-
-
-    <br>
-
-    <h3>Breads</h3>
+    <p>You are buying in
+        <b> >> </b> {{categoryPath}}</p>
 
     <div *ngFor="let items of items">
+
         <li>
             <img src="{{items.thumbnailImage}}" alt="" width="130px"> </li>
         <br>
@@ -17,15 +15,8 @@
         <br>
         <li>{{items.salePrice}}</li>
         <br>
-
         <button>
-            <a [routerLink]="['../', items.itemId]">Add to Cart</a>
+            <a [routerLink]="['../', items.itemId]">See Product</a>
         </button>
-
-        <!-- <li>Categoria: {{items.categoryPath}}</li> -->
-
-
-
-
     </div>
 </body>
