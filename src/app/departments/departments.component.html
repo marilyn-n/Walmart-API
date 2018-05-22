@@ -1,7 +1,3 @@
-<p>
-  departments works!
-</p>
-
 <div *ngFor="let categories of categories">
-<li><a [routerLink]="['../', categories.id]">{{categories.name}}</a> </li>
+<li> <button><a [routerLink]="['../', categories.id]">{{categories.name}}</a> </button> </li>
 </div>

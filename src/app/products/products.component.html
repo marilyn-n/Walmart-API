@@ -1,14 +1,31 @@
-<br>
-<h3>Breads</h3>
-
-<div *ngFor="let items of items">
-        <a [routerLink]="['../', items.itemId]"> <p>{{items.name}}</p></a>
-    <li>Categoria: {{items.categoryPath}}</li>
-    <li>Producto: {{items.name}}</li>
-    <li>Precio: {{items.salePrice}}</li>
-    <li><img src="{{items.thumbnailImage}}" alt=""> </li>
-
-</div>
+<body>
 
 
+    <br>
 
+    <h3>Breads</h3>
+
+    <div *ngFor="let items of items">
+        <li>
+            <img src="{{items.thumbnailImage}}" alt="" width="130px"> </li>
+        <br>
+        <br>
+        <br>
+        <br>
+        <li>Producto: {{items.name}}</li>
+        <br>
+        <br>
+        <li>{{items.salePrice}}</li>
+        <br>
+       
+            <button>
+                <a [routerLink]="['../', items.itemId]">Add to Cart</a>
+            </button>
+      
+        <!-- <li>Categoria: {{items.categoryPath}}</li> -->
+
+
+
+
+    </div>
+</body>

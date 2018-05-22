@@ -12,7 +12,9 @@ button:hover{
   border-radius: 5px;
 }
 ul{
+  border-top: 2px solid #ffb401;
   width: 1210px;
+
 }
 
 a{

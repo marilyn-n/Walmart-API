@@ -1,19 +1,34 @@
 <body>
   <img src="../assets/walmart-logo.png" alt="" width="200px">
-    <section id="menu"> 
+  <section id="menu">
+    <div>
+      <input placeholder="¿Qué estas buscando?" type="text" name="find">
+      <input placeholder="" type="submit" name="go">
+    </div>
     <ul>
-        <button><li> <a [routerLink]="['/']"> Home </a> </li> </button> 
-        <button><li> <a [routerLink]="['categories']"> Categories</a></li> </button> 
-        <button><li> <a [routerLink]="['departments']"> All departments</a></li> </button> 
+      <button>
+        <li>
+          <a [routerLink]="['/']"> Home </a>
+        </li>
+      </button>
+      <button>
+        <li>
+          <a [routerLink]="['categories']"> Categories</a>
+        </li>
+      </button>
+      <button>
+        <li>
+          <a [routerLink]="['departments']"> All departments</a>
+        </li>
+      </button>
     </ul>
   </section>
   <section id="main">
 
   </section>
-    
-    <router-outlet></router-outlet>  
-    
-    
-  
-</body>
 
+  <router-outlet></router-outlet>
+
+
+
+</body>
