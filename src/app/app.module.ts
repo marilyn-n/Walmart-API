@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { WalmartApiService} from './services/walmart.api.service';
 import { HttpModule } from '@angular/http';
 import { Routes, RouterModule} from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { FilterProductsPipe } from './pipes/filter-products.pipe';
+
 
 // import { InterceptorModule } from './interceptor.module';
 
@@ -49,11 +52,13 @@ const routes: Routes = [
     SingleProductComponent,
     DepartmentsComponent,
     BestSellersComponent,
+    FilterProductsPipe,
   ],
   imports: [
     BrowserModule,
     HttpModule,
     RouterModule.forRoot(routes),
+    FormsModule,
    // InterceptorModule,
   ],
   providers: [WalmartApiService],

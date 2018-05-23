@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { WalmartApiService } from '../services/walmart.api.service';
 import { Observable } from 'rxjs/observable';
+import { FilterProductsPipe } from '../pipes/filter-products.pipe';
 
 @Component({
   selector: 'app-baby',

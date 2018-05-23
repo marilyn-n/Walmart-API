@@ -1,8 +1,13 @@
 <p>
   baby works!
 </p>
+<div class="search-bar">
+  <input placeholder="¿Qué estas buscando?" [(ngModel)]="search" type="text">
+  <button type="submit"><span><i class="fa fa-search"></i></span> </button> 
+</div>
 
-<div *ngFor="let items of items">
+
+<div *ngFor="let items of items | filterProducts:'name':search">
   <ul>
       <a [routerLink]="['../', items.itemId]"> <p>{{items.name}}</p></a>
     <li>{{items.name}}</li>
